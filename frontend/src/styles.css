@@ -1,0 +1,46 @@
+/* styles.css */
+.card {
+    border: none; /* Remove border from the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensure content fits within the card */
+    width: 250px; /* Fixed width for card */
+    height: 250px; /* Fixed height for card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-container {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+  
+  .card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container */
+    transition: transform 0.3s ease;
+  }
+  
+  .card-body {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card-title {
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  
+  .card-img-container:hover img {
+    transform: scale(1.1); /* Zoom effect on image hover */
+  }
+  
